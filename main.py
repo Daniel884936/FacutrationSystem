@@ -2,14 +2,15 @@ from fastapi import FastAPI, HTTPException
 from sql_app import models, database
 from routers import products
 
+
 models.Base.metadata.create_all(bind= database.engine)
 
 app = FastAPI()
 
 app.include_router(
     products.router,
-    prefix='/product',
-    tags=['product'],
+    prefix='/products',
+    tags=['products'],
     responses={404:{"description": "Not found"}}
 )
 

@@ -15,6 +15,8 @@ class Invoice(Base):
 class Porduct(Base):
     __tablename__='products'
     idProduct = Column(Integer, index=True, primary_key = True)
+    name = Column(String)
+    description = Column(String)
     price = Column(Float)
     stock = Column(Integer)
     
