@@ -1,0 +1,11 @@
+CREATED:str = 'created'
+UPDATED:str = 'updated'
+DELETED:str = 'deleted'
+NOT_CREATED:str = 'not created'
+NOT_UPDATED:str = 'not updated'
+NOT_DELETED:str = 'not deleted'
+SUCCESS:str = 'success'
+PRODUCT_NOT_FOUND:str = 'product not found'
+PRODUCTS_NOT_FOUND:str = 'products not found'
+INVOICE_NOT_FOUND:str = 'invoice not found'
+
